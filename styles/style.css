@@ -13,19 +13,107 @@
     50% { background-size: 140% auto; }
     100% { background-size: 100% auto; }
   }
+   html {
+      scroll-behavior: smooth;
+  } 
+  
 
 
-
-
-html {
-    scroll-behavior: smooth;
-}
-
-header {
+ header {
     background-color: rgba(0, 0, 0, 0.73);
+} 
+
+ .primary_styling {
+    font-family: "JosefinItalic";
+    font-size: 4em;
+    text-transform: uppercase;
+    color: #F0E9DF;
+    text-align: center;
+
 }
 
-.hamburger {
+.welcome_section {
+    background-image: url(../images/DSC_3607.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+  
+ .welcome_wrapper {
+   
+    display: flex;
+    justify-content: space-around;
+    height: 50em;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home_logo {
+    margin-top: 4em;
+}
+
+.cta_button_primary {
+    font-family: "JosefinRegular";
+    font-size: 30px;
+    background-color: #C2653A;
+    color: #F0E9DF;
+    text-decoration: none;
+    border: none;
+    padding: 0.4em 0.7em;
+    transition: ease-in-out;
+    transition-duration: 0.3s;
+}
+
+.cta_button_primary:hover {
+    background-color: #7e4125;
+}
+
+
+
+
+.welcome-info {
+     height: 500px;
+     background-color: #A39B7C;
+}
+*
+.welcome-info p {
+    font-family: "JosefinRegular";
+    font-size: 25px;
+    padding: 1em;
+    color: #F0E9DF;
+    
+}
+
+.paragraph_wrapper {
+    max-width: 90%;
+    padding: 1.1em;
+    margin: auto;
+}
+
+.cta_buttons {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+}
+
+#hidden {
+    visibility: hidden;
+}
+
+.booking_wrapper {
+    text-align: center;
+}
+
+.booking_wrapper p {
+    color: #F0E9DF;
+    font-family: "JosefinRegular";
+    text-decoration: none;
+    font-size: 20px;
+    padding: 15px;
+} 
+
+ .hamburger {
     display: none;
     margin-right: 1em;
 }
@@ -48,7 +136,8 @@ header {
 
 .nav-logo {
     width: 7em;
-}
+} 
+
 
 .nav-link{
     font-family: "JosefinRegular";
@@ -74,7 +163,7 @@ header {
 ul.nav-menu {
     margin: auto;
     margin-top: 1em;
-}
+} 
 
 .highlights {
     background-image: url(../images/DSC_3493.jpg);
@@ -357,41 +446,37 @@ body {
 
 
 
-
 @media only screen and (min-width: 1200px) {
 
-    .navigation_wrapper {
-        padding: 1em;
-    }
-    ul.nav-menu {
-        width: 54em;
-    }
-
-    .welcome_section {
-        animation: breath 45s linear infinite;
-    }
-    
-    .highlights {
-        animation: breath 45s linear infinite;
-    }
-    
-    #desktop {
-        display: flex;
-    }
-    
-    #mobile {
-        display: none;
-    }
-    
-    .cta {
-        width: 16%;
-    }
-    
-    
+.navigation_wrapper {
+    padding: 1em;
+}
+ul.nav-menu {
+    width: 54em;
+} 
+.welcome_section {
+    animation: breath 45s linear infinite;
 }
 
+.highlights {
+    animation: breath 45s linear infinite;
+}
 
-@media only screen and (max-width: 1000px) {
+#desktop {
+    display: flex;
+}
+
+#mobile {
+    display: none;
+}
+
+.cta {
+    width: 16%;
+}
+
+}
+
+ @media only screen and (max-width: 1000px) {
 
         .mobile_navbar-logo {
             display: block;
@@ -448,129 +533,101 @@ body {
     
         .hamburger.active .bar:nth-child(3) {
             transform: translateY(-8px) rotate(-45deg);
-        }
-
-
-.nav-link{
-    font-family: "JosefinRegular";
-    font-size: 20px;
-    font-weight: 400;
-    color: #F0E9DF;
-    text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.164);
-    padding: 1em;
-    text-decoration: none;
+        } 
+    .primary_styling {
+        font-size: 28px !important;
+    }
     
-}
-
-.nav-link:hover{
-    color:#C2653A;
-    transition: ease-in-out;
-    transition-duration: 0.3s;
-}
-
-.mobile_navbar-logo {
-    display: none;
-}
-
-ul.nav-menu {
-    margin: auto;
-    margin-top: 1em;
-}
-
-.primary_styling {
-    font-size: 28px !important;
-}
-
-.home_logo {
-    width: 83%;
-}
-
-
-
-#desktop_booking, #hidden {
-    display: none;
-}
-
-.cta_buttons {
-    width: 46%;
-}
-
-.welcome_section {
-    background-image: url(../images/DSC_3607.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.welcome-info p, .paragraph_style p {
-    font-size: 19px;
-    padding: 0.5em;
-}
-
-.paragraph_style {
-    font-size: 19px !important;
-    padding: 2.5em !important;
-}
-
-
-.extras_wrapper {
-    flex-direction: column;
-}
-
-.surroundings_content {
-    flex-direction: column;
-    align-items: center;
-}
-
-#desktop {
-    display: none;
-}
-
-#mobile {
-    display: block;
-}
-
-.right_image {
-    width: 93%;
-    margin: auto;
-    margin-bottom: 3em;
-}
-
-.icon_description {
-    padding: 0.5em;
-}
-
-.icon_styling {
-    height: 33px;
-}
+    .home_logo {
+        width: 83%;
+    }
     
-
-    .social_wrapper {
+    
+    
+    #desktop_booking, #hidden {
+        display: none;
+    }
+    
+    .cta_buttons {
+        width: 46%;
+    }
+    
+    .welcome_section {
+        background-image: url(../images/DSC_3607.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .welcome-info p, .paragraph_style p {
+        font-size: 19px;
+        padding: 0.5em;
+    }
+    
+    .paragraph_style {
+        font-size: 19px !important;
+        padding: 2.5em !important;
+    }
+    
+    
+    .extras_wrapper {
         flex-direction: column;
-        padding: 1em;
     }
-
-    .social_wrapper a {
-        padding: 1em
-    }
-
-    .contact_wrapper {
-        padding: 1em;
-    }
-
-    footer {
+    
+    .surroundings_content {
+        flex-direction: column;
         align-items: center;
     }
-
-    #booking_cta {
-        margin: auto;
+    
+    #desktop {
+        display: none;
     }
-
-    #availability {
-        margin: auto;
+    
+    #mobile {
+        display: block;
     }
-
-}
+    
+    .right_image {
+        width: 93%;
+        margin: auto;
+        margin-bottom: 3em;
+    }
+    
+    .icon_description {
+        padding: 0.5em;
+    }
+    
+    .icon_styling {
+        height: 33px;
+    }
+        
+    
+        .social_wrapper {
+            flex-direction: column;
+            padding: 1em;
+        }
+    
+        .social_wrapper a {
+            padding: 1em
+        }
+    
+        .contact_wrapper {
+            padding: 1em;
+        }
+    
+        footer {
+            align-items: center;
+        }
+    
+        #booking_cta {
+            margin: auto;
+        }
+    
+        #availability {
+            margin: auto;
+        }
+    
+    }
 
 
 @media only screen and (max-width: 700px) {
