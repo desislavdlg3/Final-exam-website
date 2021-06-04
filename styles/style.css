@@ -73,10 +73,9 @@
 
 
 .welcome-info {
-     height: 500px;
      background-color: #A39B7C;
 }
-*
+
 .welcome-info p {
     font-family: "JosefinRegular";
     font-size: 25px;
