@@ -15,16 +15,14 @@
   }
    html {
       scroll-behavior: smooth;
+      font-family: "JosefinRegular";
   } 
-  
-
 
  header {
     background-color: rgba(0, 0, 0, 0.73);
 } 
 
  .primary_styling {
-    font-family: "JosefinItalic";
     font-size: 4em;
     text-transform: uppercase;
     color: #F0E9DF;
@@ -54,7 +52,6 @@
 }
 
 .cta_button_primary {
-    font-family: "JosefinRegular";
     font-size: 30px;
     background-color: #C2653A;
     color: #F0E9DF;
@@ -69,16 +66,14 @@
     background-color: #7e4125;
 }
 
-
-
-
 .welcome-info {
-     background-color: #A39B7C;
+     background-color: #000;
+     z-index: 14;
+     position: relative;
 }
 
 .welcome-info p {
-    font-family: "JosefinRegular";
-    font-size: 25px;
+    font-size: 23px;
     padding: 1em;
     color: #F0E9DF;
     
@@ -106,7 +101,6 @@
 
 .booking_wrapper p {
     color: #F0E9DF;
-    font-family: "JosefinRegular";
     text-decoration: none;
     font-size: 20px;
     padding: 15px;
@@ -139,7 +133,6 @@
 
 
 .nav-link{
-    font-family: "JosefinRegular";
     font-size: 20px;
     font-weight: 400;
     color: #F0E9DF;
@@ -169,6 +162,7 @@ ul.nav-menu {
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
+    margin-top: -5px;
 }
 
 .heading {
@@ -193,7 +187,6 @@ ul.nav-menu {
 }
 
 .icon_description {
-    font-family: "JosefinRegular";
     font-size: 1.3em;
     color: #F0E9DF;
     padding: 1em;
@@ -208,6 +201,7 @@ ul.nav-menu {
 #availability {
     display: flex;
     font-size: 25px;
+    margin: auto;
     align-items: center;
 }
 
@@ -235,7 +229,6 @@ ul.nav-menu {
 .paragraph_style {
     color: #F0E9DF;
     font-size: 2.1em;
-    font-family: 'JosefinRegular';
     padding: 2.2em;
     margin: auto;
     background-image: url(../images/11_frosted.jpg);
@@ -257,12 +250,13 @@ ul.nav-menu {
 
 .progress{
     height:10px;
-    background: #000;
+    /* background: #000; */
     width:100%;
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 10;
+    z-index: 15;
+
   }
   .progress__highlight{
     transition: width 0.15s linear;
@@ -271,50 +265,61 @@ ul.nav-menu {
     width:0%;
   }
 
+  /* footer styling mobile first v2.0 */
+
 footer {
-    background-color: #7A7254;
-    display: flex;
-    width: 100%;
+    background-color: #474333;
     justify-content: space-around;
+    align-items: center;
+    
 }
 
-footer p {
-    font-family: "JosefinRegular";
+.social_media {
+    text-align: center;
+}
+
+.social_media p {
     font-size: 20px;
+    color: #F0E9DF;
+    padding: 0.5em;
+}
+
+.social_media-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1em;
+    flex-direction: row;
+    margin: auto;
+    width: 90%;
+}
+
+.social_media-icons a {
+    padding: 0.5em;
+}
+
+.contact_info {
     padding: 1em;
 }
 
-.location, .phone {
+.contact_info img {
+    padding: 0.3em;
+}
+
+.location, .phone, .mail {
+    justify-content: center;
+    padding: 0.5em;
     display: flex;
     align-items: center;
 }
 
-.location p, .phone p {
+.location p, .phone p, .mail p {
+    font-size: 20px;
     color: #F0E9DF;
     text-decoration: none;
 }
 
-.social_wrapper {
-    display: flex;
-    align-items: center;
-    width: 14em;
-    justify-content: space-around;
-}
-
-.social_wrapper p {
-    padding: 1em;
-}
-
-
-
-
-
-
-
-.background {
-    background-image: url(../images/img_blurred.jpg) !important;
- 
-}
+/* footer style end */
 
 
 
@@ -437,19 +442,20 @@ body {
 .copyright {
     font-family: "JosefinItalic";
     text-align: center;
-    background-color: #474333;
+    background-color: #c2653a;
     color: #F0E9DF;
 }
 
 
 
+/* desktop breakpoint */
 
-
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1024px) {
 
 .navigation_wrapper {
     padding: 1em;
 }
+
 ul.nav-menu {
     width: 54em;
 } 
@@ -469,13 +475,86 @@ ul.nav-menu {
     display: none;
 }
 
+.paragraph_wrapper {
+    max-width: 60%;
+}
+
+
+.extras_wrapper {
+    width: 70%;
+    margin: auto;
+}
+
+/* footer styling v2.0 desktop */
+
+footer p {
+    font-size: 20px;
+}
+
+.social_media {
+    display: flex;
+    width: 65%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social_media-icons {
+    min-width: 30%;
+    max-width: 35%;
+    margin: 0;
+    padding: 1em;
+}
+
+.social_media-icons img:hover {
+    transform: scale(80%);
+    transition: 0.5s ease;
+}
+
+
+.social_media p {
+    padding: 1em;
+    font-size: 20px;
+    color: #F0E9DF
+}
+
+.map {
+    width: 80%;
+    margin: auto;
+}
+
+.contact {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+.contact_info {
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.contact_info p {
+    padding: 0.3em;
+}
+
+.location:hover, .phone:hover, .mail:hover {
+    transform: scale(90%);
+    transition: 0.5s ease;
+}
+
+/* footer style end */
+
 .cta {
     width: 16%;
 }
 
+/* tablet breakpoint */
+
 }
 
- @media only screen and (max-width: 1000px) {
+ @media only screen and (max-width: 1024px) {
 
         .mobile_navbar-logo {
             display: block;
@@ -600,22 +679,19 @@ ul.nav-menu {
         height: 33px;
     }
         
-    
-        .social_wrapper {
-            flex-direction: column;
-            padding: 1em;
-        }
-    
-        .social_wrapper a {
-            padding: 1em
-        }
-    
-        .contact_wrapper {
+        .contact_info {
             padding: 1em;
         }
     
         footer {
             align-items: center;
+        }
+
+      
+        
+
+        .contact {
+            justify-content: space-around;
         }
     
         #booking_cta {
@@ -628,6 +704,15 @@ ul.nav-menu {
     
     }
 
+    @media only screen and (max-width:1024px) {
+        #map {
+            position: relative;
+            left: 10%;
+        }
+    }
+
+
+    /* mobile navigation menu breakpoint */
 
 @media only screen and (max-width: 700px) {
 
@@ -755,22 +840,14 @@ ul.nav-menu {
         transform: translateY(-8px) rotate(-45deg);
     }
 
-    .social_wrapper {
-        flex-direction: column;
-        padding: 1em;
+    #map {
+        width: 90%;
+        position: relative;
+        left: 5%;
     }
-
-    .social_wrapper a {
-        padding: 1em
-    }
-
-    .contact_wrapper {
-        padding: 1em;
-    }
-
-    footer {
-        align-items: center;
-    }
+.copyright {
+    font-size: 14px;
+}
 
     #booking_cta {
         margin: auto;
