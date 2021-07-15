@@ -27,7 +27,7 @@ function closeMenu() {
 
 // progress-bar-script-start
 
-const container = document.getElementById('js-container');
+const container = document.body;
 const highlight = document.getElementById('js-highlight');
 var containerHeight;
 

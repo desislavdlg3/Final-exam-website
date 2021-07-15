@@ -20,6 +20,9 @@
 
  header {
     background-color: rgba(0, 0, 0, 0.73);
+    position: absolute;
+    top: 0;
+    width: 100%;
 } 
 
  .primary_styling {
@@ -30,7 +33,7 @@
 
 }
 
-.welcome_section {
+.welcome_wrapper {
     background-image: url(../images/DSC_3607.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -48,7 +51,7 @@
 }
 
 .home_logo {
-    margin-top: 4em;
+    margin-top: 7em;
 }
 
 .cta_button_primary {
@@ -327,9 +330,6 @@ footer {
 .mySlides {display: none}
 img {vertical-align: middle;}
 
-body {
-    background-color: #ABA590;
-}
 
 /* Slideshow container */
 .slideshow-container {
@@ -459,7 +459,7 @@ body {
 ul.nav-menu {
     width: 54em;
 } 
-.welcome_section {
+.welcome_wrapper {
     animation: breath 45s linear infinite;
 }
 
@@ -630,7 +630,7 @@ footer p {
         width: 46%;
     }
     
-    .welcome_section {
+    .welcome_wrapper {
         background-image: url(../images/DSC_3607.png);
         background-repeat: no-repeat;
         background-position: center;
@@ -749,7 +749,7 @@ footer p {
     width: 46%;
 }
 
-.welcome_section {
+.welcome_wrapper {
     background-image: url(../images/DSC_3607_mobile.png);
     background-repeat: no-repeat;
     background-position: center;
