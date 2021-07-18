@@ -17,12 +17,14 @@
       scroll-behavior: smooth;
       font-family: "JosefinRegular";
   } 
-
- header {
+  
+  #navbar {
     background-color: rgba(0, 0, 0, 0.73);
-    position: absolute;
-    top: 0;
+    top: 0px;
+    position: fixed;
     width: 100%;
+    z-index: 16;
+    transition: top 0.3s;
 } 
 
  .primary_styling {
@@ -36,6 +38,8 @@
 .welcome_wrapper {
     background-image: url(../images/DSC_3607.png);
     background-repeat: no-repeat;
+    background-attachment: fixed;
+
     background-size: cover;
     
 }
@@ -67,6 +71,9 @@
 
 .cta_button_primary:hover {
     background-color: #7e4125;
+    text-decoration-line: underline;
+    transition-duration: 0.2s;
+    font-size: 29px;
 }
 
 .welcome-info {
@@ -135,20 +142,22 @@
 } 
 
 
-.nav-link{
+.nav-link {
     font-size: 20px;
     font-weight: 400;
     color: #F0E9DF;
     text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.164);
     padding: 1em;
-    text-decoration: none;
-    
+    text-decoration: underline 0.1em #c2653a00 !important;
+    transition: text-decoration-color 300ms;
 }
 
+
 .nav-link:hover{
-    color:#C2653A;
+    color:#aaa49c;
     transition: ease-in-out;
-    transition-duration: 0.3s;
+    text-decoration-color: #aaa49c !important;
+    transition-duration: 300ms;
 }
 
 .mobile_navbar-logo {
@@ -165,6 +174,7 @@ ul.nav-menu {
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
+    background-attachment: fixed;
     margin-top: -5px;
 }
 
@@ -633,6 +643,7 @@ footer p {
     .welcome_wrapper {
         background-image: url(../images/DSC_3607.png);
         background-repeat: no-repeat;
+        background-attachment: fixed;
         background-position: center;
         background-size: cover;
     }
@@ -753,6 +764,7 @@ footer p {
     background-image: url(../images/DSC_3607_mobile.png);
     background-repeat: no-repeat;
     background-position: center;
+    background-attachment: fixed;
     background-size: cover;
 }
 
