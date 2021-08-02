@@ -1,11 +1,13 @@
 @font-face {
     font-family: JosefinRegular;
     src: url(../fonts/JosefinSans-Regular.ttf);
+    font-display: swap;
 }
 
 @font-face {
     font-family: JosefinItalic;
     src: url(../fonts/JosefinSans-Italic.ttf);
+    font-display: swap;
 }
 
 @keyframes breath {
@@ -13,7 +15,8 @@
     50% { background-size: 140% auto; }
     100% { background-size: 100% auto; }
   }
-   html {
+
+  html {
       scroll-behavior: smooth;
       font-family: "JosefinRegular";
   } 
@@ -36,22 +39,15 @@
 }
 
 .welcome_wrapper {
-    background-image: url(../images/DSC_3607.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-
-    background-size: cover;
-    
-}
-
-  
- .welcome_wrapper {
-   
     display: flex;
     justify-content: space-around;
     height: 50em;
     align-items: center;
     flex-direction: column;
+    background-image: url(../images/DSC_3607.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .home_logo {
@@ -452,7 +448,7 @@ img {vertical-align: middle;}
 .copyright {
     font-family: "JosefinItalic";
     text-align: center;
-    background-color: #c2653a;
+    background-color: #8d4321;
     color: #F0E9DF;
 }
 
@@ -641,7 +637,7 @@ footer p {
     }
     
     .welcome_wrapper {
-        background-image: url(../images/DSC_3607.png);
+        background-image: url(../images/DSC_3607.jpg);
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-position: center;
@@ -761,7 +757,7 @@ footer p {
 }
 
 .welcome_wrapper {
-    background-image: url(../images/DSC_3607_mobile.png);
+    background-image: url(../images/DSC_3607_mobile.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
