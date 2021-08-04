@@ -1,18 +1,6 @@
 /* NOTE! STYLESHEET IS MINIFIED AND BEAUTIFIED
 Original stylesheet features 868 lines, the minified one is 784.. with total savings of ...... 2KB */
 
-@font-face {
-	font-family: JosefinRegular;
-	src: url(../fonts/JosefinSans-Regular.ttf);
-	font-display: swap
-}
-
-@font-face {
-	font-family: JosefinItalic;
-	src: url(../fonts/JosefinSans-Italic.ttf);
-	font-display: swap
-}
-
 @keyframes breath {
 	0% {
 		background-size: 100% auto
@@ -27,7 +15,7 @@ Original stylesheet features 868 lines, the minified one is 784.. with total sav
 
 html {
 	scroll-behavior: smooth;
-	font-family: "JosefinRegular"
+	font-family: 'Josefin Sans', sans-serif
 }
 
 #navbar {
@@ -46,7 +34,7 @@ html {
 	text-align: center
 }
 
-.welcome_wrapper {
+.welcome-landing {
 	display: flex;
 	justify-content: space-around;
 	height: 50em;
@@ -84,6 +72,11 @@ html {
 	background-color: #000;
 	z-index: 14;
 	position: relative
+}
+.welcome-info-heading {
+	text-align: center;
+	color: #f0e9df;
+	font-size: 1.5em;
 }
 
 .welcome-info p {
@@ -150,7 +143,6 @@ html {
 	color: #f0e9df;
 	text-shadow: 0 3px 6px rgba(0, 0, 0, 0.164);
 	padding: 1em;
-	text-decoration: underline .1em #c2653a00!important;
 	transition: text-decoration-color 300ms
 }
 
@@ -199,7 +191,6 @@ ul.nav-menu {
 .icon_styling {
 	height: 3em
 }
-
 .icon_description {
 	font-size: 1.3em;
 	color: #f0e9df;
@@ -224,11 +215,15 @@ ul.nav-menu {
 }
 
 .suroundings {
-	background-color: #7a7254
+	background-color: #554e35
 }
 
 .surround_content-wrapper {
-	background-color: #a39b7c
+	background-color: #1f1e1b
+}
+
+.hr-surroundings {
+	max-width: 90%;
 }
 
 .suroundings h1 {
@@ -241,7 +236,7 @@ ul.nav-menu {
 }
 
 .explanation-heading {
-	font-size: 1.6em;
+	font-size: 1.9em;
     color: #f0e9df;
 	line-height: 2.5;
 	padding: 0.3em;
@@ -263,30 +258,17 @@ ul.nav-menu {
 	padding: 1em;
 }
 
-#mobile {
+.mobile {
 	display: none
 }
 
-#desktop {
+.desktop {
 	display: none
 }
-
-.progress {
-	height: 10px;
-	width: 100%;
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 15
+.gallery {
+	background-image: url(../images/img12.jpg);
+	padding-bottom: 2em;
 }
-
-.progress__highlight {
-	transition: width .15s linear;
-	background: #c2653a;
-	height: 100%;
-	width: 0
-}
-
 footer {
 	background-color: #474333;
 	justify-content: space-around;
@@ -355,9 +337,11 @@ img {
 }
 
 .slideshow-container {
-	max-width: 1000px;
+	width: 90%;
 	position: relative;
-	margin: auto
+	margin: auto;
+	padding: 1em;
+    background-color: #f0e9df;
 }
 
 .prev,
@@ -426,18 +410,6 @@ img {
 	animation-duration: 1.5s
 }
 
-.slideshow-container {
-	width: 100%;
-	padding: 1em;
-	padding-top: 3em;
-	background-color: #7a7254;
-	width: 100%;
-	padding: 2em;
-	padding-top: 3em;
-	margin-bottom: 3em;
-	margin-top: 3em
-}
-
 @-webkit-keyframes fade {
 	from {
 		opacity: .4
@@ -465,7 +437,7 @@ img {
 }
 
 .copyright {
-	font-family: "JosefinItalic";
+	font-family: "Josefin Sans";
 	text-align: center;
 	background-color: #8d4321;
 	color: #f0e9df
@@ -478,8 +450,11 @@ img {
 	ul.nav-menu {
 		width: 54em
 	}
-	.welcome_wrapper {
+	.welcome-landing {
 		animation: breath 45s linear infinite
+	}
+	.welcome-info-heading {
+		font-size: 1.9em
 	}
 	.highlights {
 		animation: breath 45s linear infinite
@@ -487,12 +462,15 @@ img {
 	.surroundings_content {
 		max-width: 70%;
 		margin: auto;
-		align-items: center;
+		align-items: center
 	}
-	#desktop {
+	.hr-surroundings {
+		max-width: 75%
+	}
+	.desktop {
 		display: flex
 	}
-	#mobile {
+	.mobile {
 		display: none
 	}
 	.paragraph_wrapper {
@@ -501,6 +479,21 @@ img {
 	.extras_wrapper {
 		width: 70%;
 		margin: auto
+	}
+	.right_image {
+		padding: 2em;
+	}
+	.gallery-text {
+		width: 20%;
+		margin: auto;
+	}
+	.gallery {
+		display: flex;
+		padding-bottom: 0;
+	}
+	.slideshow-container{
+		margin: 5em;
+		width: 40%;
 	}
 	footer p {
 		font-size: 20px
@@ -616,7 +609,7 @@ img {
 	.cta_buttons {
 		width: 46%
 	}
-	.welcome_wrapper {
+	.welcome-landing {
 		background-image: url(../images/DSC_3607.jpg);
 		background-repeat: no-repeat;
 		background-attachment: fixed;
@@ -639,10 +632,10 @@ img {
 		flex-direction: column;
 		align-items: center
 	}
-	#desktop {
+	.desktop {
 		display: none
 	}
-	#mobile {
+	.mobile {
 		display: block
 	}
 	.right_image {
@@ -707,7 +700,7 @@ img {
 	.cta_buttons {
 		width: 46%
 	}
-	.welcome_wrapper {
+	.welcome-landing {
 		background-image: url(../images/DSC_3607_mobile.jpg);
 		background-repeat: no-repeat;
 		background-position: center;
@@ -732,7 +725,7 @@ img {
 	#desktop {
 		display: none
 	}
-	#mobile {
+	.mobile {
 		display: block
 	}
 	.right_image {
@@ -779,11 +772,6 @@ img {
 	}
 	.hamburger.active .bar:nth-child(3) {
 		transform: translateY(-8px) rotate(-45deg)
-	}
-	#map {
-		width: 90%;
-		position: relative;
-		left: 5%
 	}
 	.copyright {
 		font-size: 14px
