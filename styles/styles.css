@@ -1,5 +1,5 @@
 /* NOTE! STYLESHEET IS MINIFIED AND BEAUTIFIED
-Original stylesheet features 868 lines, the minified one is 784.. with total savings of ...... 2KB */
+Original stylesheet features 868 lines, the minified one is 785.. with total savings of ...... 2KB */
 
 @keyframes breath {
 	0% {
@@ -15,7 +15,8 @@ Original stylesheet features 868 lines, the minified one is 784.. with total sav
 
 html {
 	scroll-behavior: smooth;
-	font-family: 'Josefin Sans', sans-serif
+	font-family: 'Josefin Sans', sans-serif;
+	text-decoration: none !important;
 }
 
 #navbar {
@@ -40,7 +41,7 @@ html {
 	height: 50em;
 	align-items: center;
 	flex-direction: column;
-	background-image: url(../images/DSC_3607.jpg);
+	background-image: url(../images/DSC_3607_mobile.jpg);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover
@@ -51,14 +52,23 @@ html {
 }
 
 .cta_button_primary {
-	font-size: 30px;
+	font-size: 29px;
 	background-color: #c2653a;
 	color: #f0e9df;
 	text-decoration: none;
 	border: 0;
-	padding: .4em .7em;
+	padding: .5em .5em;
 	transition: ease-in-out;
-	transition-duration: .3s
+	transition-duration: .3s;
+	display:flex;
+	align-items: center;
+	height: 50%;
+	width: fit-content;
+	justify-content: center;
+}
+#check_cta {
+	font-size: 25px;
+	align-items: center;
 }
 
 .cta_button_primary:hover {
@@ -163,11 +173,10 @@ ul.nav-menu {
 }
 
 .highlights {
-	background-image: url(../images/DSC_3493.jpg);
+	background-image: url(../images/DSC_3493_mobile.jpg);
 	background-repeat: no-repeat;
 	background-position: top;
 	background-size: cover;
-	background-attachment: fixed;
 	margin-top: -5px
 }
 
@@ -266,7 +275,7 @@ ul.nav-menu {
 	display: none
 }
 .gallery {
-	background-image: url(../images/img12.jpg);
+	background-image: url(../images/img12_mobile.jpg);
 	padding-bottom: 2em;
 }
 footer {
@@ -304,6 +313,7 @@ footer {
 }
 
 .contact_info img {
+	height: 45px;
 	padding: .3em
 }
 
@@ -451,13 +461,16 @@ img {
 		width: 54em
 	}
 	.welcome-landing {
+		background-image: url(../images/DSC_3607.jpg);
 		animation: breath 45s linear infinite
 	}
 	.welcome-info-heading {
 		font-size: 1.9em
 	}
 	.highlights {
-		animation: breath 45s linear infinite
+		animation: breath 45s linear infinite;
+		background-image: url(../images/DSC_3493.jpg);
+		background-attachment: fixed
 	}
 	.surroundings_content {
 		max-width: 70%;
@@ -488,6 +501,7 @@ img {
 		margin: auto;
 	}
 	.gallery {
+		background-image: url(../images/img12.jpg);
 		display: flex;
 		padding-bottom: 0;
 	}
@@ -542,6 +556,9 @@ img {
 	.mail:hover {
 		transform: scale(90%);
 		transition: .5s ease
+	}
+	#booking_cta {
+		width: fit-content;
 	}
 	.cta {
 		width: 16%
@@ -609,8 +626,10 @@ img {
 	.cta_buttons {
 		width: 46%
 	}
+	.cta_button_primary {
+		height: 100%;
+	}
 	.welcome-landing {
-		background-image: url(../images/DSC_3607.jpg);
 		background-repeat: no-repeat;
 		background-attachment: fixed;
 		background-position: center;
@@ -661,6 +680,11 @@ img {
 	#booking_cta {
 		margin: auto
 	}
+	
+	#booking_link {
+		width: 50%;
+		margin:auto
+	}
 	#availability {
 		margin: auto
 	}
@@ -701,10 +725,9 @@ img {
 		width: 46%
 	}
 	.welcome-landing {
-		background-image: url(../images/DSC_3607_mobile.jpg);
+		background: url(../images/DSC_3607_mobile.jpg);
 		background-repeat: no-repeat;
 		background-position: center;
-		background-attachment: fixed;
 		background-size: cover
 	}
 	.welcome-info p,

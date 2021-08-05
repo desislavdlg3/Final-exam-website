@@ -24,24 +24,6 @@ function closeMenu() {
 
 // hamburger-menu-on-mobile-script-end
 
-
-// progress-bar-script-start
-
-const container = document.body;
-const highlight = document.getElementById('js-highlight');
-var containerHeight;
-
-window.onscroll = function(){
-  containerHeight = container.offsetHeight - window.innerHeight;
-  containerPos = container.getBoundingClientRect();
-  diff = containerHeight + containerPos.top;
-  progressPercentage = diff / containerHeight * 100;
-  cssWidth = Math.floor(100 - progressPercentage);
-  highlight.style.width = cssWidth + "%";
-}
-
-// progress-bar-script-end
-
 // gallery-script-start
 
 var slideIndex = 1;
