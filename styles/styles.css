@@ -69,6 +69,7 @@ html {
 #check_cta {
 	font-size: 25px;
 	align-items: center;
+	margin: auto;
 }
 
 .cta_button_primary:hover {
@@ -79,7 +80,7 @@ html {
 }
 
 .welcome-info {
-	background-color: #000;
+	background-color: #1f1907;
 	z-index: 14;
 	position: relative
 }
@@ -224,11 +225,11 @@ ul.nav-menu {
 }
 
 .suroundings {
-	background-color: #554e35
+	background-color: #5b642a
 }
 
 .surround_content-wrapper {
-	background-color: #1f1e1b
+	background-color: #1f1907
 }
 
 .hr-surroundings {
@@ -279,7 +280,7 @@ ul.nav-menu {
 	padding-bottom: 2em;
 }
 footer {
-	background-color: #474333;
+	background-color: #1f1907;
 	justify-content: space-around;
 	align-items: center
 }
